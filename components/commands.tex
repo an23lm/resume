@@ -1,0 +1,53 @@
+%-------------------------%
+% Custom commands
+
+\newcommand{\fwRegular}[1]{{\sffamily #1\normalfont}}
+\newcommand{\fwBlack}[1]{{\interheavy #1\normalfont}}
+\newcommand{\fwBold}[1]{{\sffamily\textbf{#1}\normalfont}}
+\newcommand{\fwSemiBold}[1]{{\intersemibold #1\normalfont}}
+\newcommand{\fwExtraBold}[1]{{\interextrabold #1\normalfont}}
+\newcommand{\mono}[1]{{\notomono #1\normalfont}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \small\fwBold{\MakeUppercase{\textls[20]{#1}}} & \scriptsize\MakeUppercase{#2} \\
+      \footnotesize\textcolor{Accent}{\fwExtraBold{\MakeUppercase{\textls[20]{#3}}}}{\MakeUppercase{#4}} & \scriptsize\MakeUppercase{#5} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \fwBold{\MakeUppercase{\small\textls[20]{#1}}} -- \fwRegular{\footnotesize#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={
+    \color{white}-
+}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label={-}]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
+
+% End custom commands
+%-------------------------%

@@ -2,7 +2,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{fontawesome5}
+% \usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -53,155 +53,18 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+\input{components/commands}
 
-%-------------------------%
-% Custom commands
-
-\newcommand{\fwRegular}[1]{{\sffamily #1\normalfont}}
-\newcommand{\fwBlack}[1]{{\interheavy #1\normalfont}}
-\newcommand{\fwBold}[1]{{\sffamily\textbf{#1}\normalfont}}
-\newcommand{\fwSemiBold}[1]{{\intersemibold #1\normalfont}}
-\newcommand{\fwExtraBold}[1]{{\interextrabold #1\normalfont}}
-\newcommand{\mono}[1]{{\notomono #1\normalfont}}
-
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[5]{
-  \vspace{0pt}\item
-    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \small\fwBold{\MakeUppercase{\textls[20]{#1}}} & \scriptsize\MakeUppercase{#2} \\
-      \footnotesize\textcolor{Accent}{\fwExtraBold{\MakeUppercase{\textls[20]{#3}}}}{\MakeUppercase{#4}} & \scriptsize\MakeUppercase{#5} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small #1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-        \fwBold{\MakeUppercase{\small\textls[20]{#1}}} -- \fwRegular{\footnotesize#2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.10in, label={
-    \color{white}-
-}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.25in, label={-}]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-
-\newcommand{\seticon}[1]{\textcolor{Black}{\csname #1\endcsname}}
-
-
-%----------CV STARTS HERE----------%
 \begin{document}
 
-%----------HEADING----------%
-\fwBlack{\Huge\textls[100]{ANSELM\hspace{0.4em}JOSEPH}}\hspace*{1cm} \\ \vspace{5pt}
-\fwBlack{\Large\textcolor{Accent}{\textls[100]{FULL\hspace{0.43em}STACK\hspace{0.43em}DEVELOPER}}} \\ \vspace{5pt}
-\href{tel:+1-872-258-5803}{\small{\mono{+1\hspace{0.2em}(872)\hspace{0.2em}258-5803}}}
-\hspace{0.43em}•\hspace{0.43em}\href{mailto:ajoseph17@hawk.iit.edu}{\small{\mono{ajoseph17@hawk.iit.edu}}}
-\hspace{0.43em}•\hspace{0.43em}\href{https://www.linkedin.com/in/anselmj}{\small{\mono{linkedin.com/in/anselmj}}}
-\hspace{0.43em}•\hspace{0.43em}\href{https://an23lm.github.io}{\small{\mono{an23lm.github.io}}} \\ \vspace{10pt}
-\small{Full Stack Developer with 5+ years of experience in backend, web, and mobile applications. Master's in Computer Engineering with focus on Machine Learning. Experienced with React, React Native, Java, Node.js, MySQL, and MongoDB.}
+\input{components/heading}
 
-%-----------EXPERIENCE-----------%
-\section{PROFESSIONAL EXPERIENCE}
-\resumeSubHeadingListStart
+\input{components/experience}
 
-    \resumeSubheading
-    {MOLEX}{Bangalore, India}
-    {Software Engineer}{}{Dec 2019 -- Aug 2022}
-    \resumeItemListStart
-        \resumeItem{Owned Identity and Access Management (IAM) microservice built using Spring Boot and MongoDB, streamlined user authentication and authorization processes, reducing API development time by 10\% and enhancing security.}
-        \resumeItem{Developed middleware to ingest and aggregate real-time data using Python, AWS; improving ingestion rate by 17\%.}
-        \resumeItem{Improved digitization pipeline's efficiency by 70\% for terabytes of blueprints built on GCP, Python, Pillow, and Solr.}
-    \resumeItemListEnd
-    
-    \resumeSubheading
-    {CBREX Technologies}{Bangalore, India}
-    {Product Engineer 1}{}{Aug 2017 -- Dec 2019}
-    \resumeItemListStart
-        \resumeItem{Refactored website and mobile app to use React and provide excellent UX, improving user engagement by 33\%.}
-        \resumeItem{Created 2 JavaScript libraries, reducing redundant code by 20\% and improving UX and customer satisfaction.}
-        \resumeItem{Communicated technical subjects to stakeholders and created actionable tasks, reducing delivery time of features.}
-        \resumeItem{Contributed to adoption of Agile Methodologies and CI/CD, utilizing Jira and Jenkins, improving productivity by 30\%.}
-        \resumeItem{Optimized MySQL queries and implemented API caching using Redis with Spring Boot, reducing load times by 44\%.}
-    \resumeItemListEnd
+\input{components/education}
 
-\resumeSubHeadingListEnd
+\input{components/projects}
 
-%-----------EDUCATION-----------%
-\section{EDUCATION}
-    \resumeSubHeadingListStart
+\input{components/skills}
 
-    \resumeSubheading
-    {Illinois Institute of Technology}{Chicago, IL}
-    {Masters in Computer Engineering}{, 3.9 GPA}{Expected May 2024}
-    \resumeItemListStart
-        \resumeItem{\textbf{Focus:}  Probability \& Statistics in CS, Machine Learning, and Artificial Intelligence.}
-    \resumeItemListEnd
-
-    \resumeSubheading
-    {New Horizon College of Engineering}{Bangalore, India}
-    {Bachelors in Computer Science and Engineering}{}{August 2013 -- May 2017}
-    \resumeItemListStart
-        \resumeItem{\textbf{Focus:}  Advanced Data Structures and Algorithms.}
-    \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------%
-\section{ENTREPRENEURIAL EXPERIENCE}
-\resumeSubHeadingListStart
-
-    \resumeProjectHeading
-    {Dog Leads} {React.js, Next.js, Typescript, AWS, Machine Learning} {}
-    \resumeItemListStart
-        \resumeItem{Created a platform to generate leads for businesses using Artificial Intelligence.}
-        \resumeItem{Implemented a recommendation system using collaborative filtering, increasing user engagement by 40\%.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-    {Earthen Shade} {React.js, Next.js, Vercel, Firebase, GCP, Typescript, Tailwind CSS} {}
-    \resumeItemListStart
-        \resumeItem {Designed and developed an e-commerce platform, finding balance between technical robustness and business impact, iterating with feedback from stakeholders and customers.}
-        \resumeItem{Implemented a real-time chat feature using WebSocket and Socket.io, enhancing user engagement and reducing response time by 20\%.}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-    {NoBias Investing} {React Native, Typescript, Swift, Java, GitLab CI/CD} {}
-    \resumeItemListStart
-        \resumeItem{Balanced between UX and performance on information-rich screens through a process of continuous improvement.}
-        \resumeItem{Widespread device compatibility was prioritized and ensured reliability and responsiveness on low-end networks.}
-    \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%-----------PROGRAMMING SKILLS-----------%
-\section{SKILLS}
-    \begin{itemize}[leftmargin=0.10in, label={}]
-	\small{\item{
-        \fwSemiBold{Languages}{: JavaScript, TypeScript, Python, Java, Swift, Kotlin, Go.} \\
-		\fwSemiBold{Frontend Technologies}{: React, React Native, SwiftUI, HTML, CSS, Tailwind CSS, Bootstrap.} \\
-		\fwSemiBold{Backend Technologies}{: Google Cloud, Firebase, AWS, Node.js, Next.js, Spring Boot, Flask, MongoDB, Firestore, MySQL, Redis, Docker.} \\
-		\fwSemiBold{Concepts}{: Operating System, Object Oriented Programming, Functional Programming, Caching, Encryption, Decryption, Artificial Intelligence, Machine Learning, Neural Networks, REST API, SOAP API, Database Normalization, Agile Methodology, Cloud Computing, Payment Systems, Containerization, CI/CD, Sockets, Networking, Security.} \\
-	}}
-    \end{itemize}
-
-%-------------------------------------------%
 \end{document}
