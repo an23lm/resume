@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "pdflatex",
+				"command": "/Library/TeX/texbin/pdflatex",
+				"tools": [
+					"pdflatex"
+				]
+			}
+		],
+		"[latex]": {
+			"editor.defaultFormatter": "James-Yu.latex-workshop",
+			"editor.formatOnSave": false,
+		},
+	}
+}
