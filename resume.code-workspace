@@ -17,5 +17,8 @@
 			"editor.defaultFormatter": "James-Yu.latex-workshop",
 			"editor.formatOnSave": false,
 		},
+		"cSpell.words": [
+			"pdflatex"
+		],
 	}
 }

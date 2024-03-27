@@ -6,3 +6,6 @@ resume*.log
 resume*.out
 resume*.synctex.gz
 resume*.synctex(busy)
+components/*.log
+output/*
+Resume
