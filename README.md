@@ -28,7 +28,8 @@ Install the following packages using `tlmgr` (sudo might be required):
 
 ### Generating PDF
 ```bash
-pdflatex resume.tex
+chmod +x build.sh
+./build.sh
 ```
 
 ### Preview
