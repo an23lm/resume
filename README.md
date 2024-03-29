@@ -90,7 +90,7 @@ Methodology, Cloud Computing, Payment Systems, Containerization, CI/CD, Sockets,
 I'm not an expert at LaTeX, this is my first work with LaTeX. Feedback is always welcome. If you have any to give, [create an issue on GitHub](https://github.com/an23lm/resume/issues).
 
 #### Known Issues
-- Some words in plain text use special characters which is not expected. Example: `Artiﬁcial Intelligence` should be `Artificial Intelligence` - [GitHub Issue #1](https://github.com/an23lm/resume/issues/1)
+- Some words in plain text use special characters which are not expected. Example: `Artiﬁcial Intelligence` should be `Artificial Intelligence` - [GitHub Issue #1](https://github.com/an23lm/resume/issues/1)
 
 ### Inspiration
 Before this I used Pages to create my resume. I noticed that it was not ATS friendly. So I decided to create a LaTeX resume which is ATS friendly and looks professional.
