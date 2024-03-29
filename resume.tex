@@ -1,70 +1,23 @@
 %!TeX program = pdflatex
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
-% \usepackage{fontawesome5}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\input{glyphtounicode}
-\usepackage{microtype}
+    \input{components/macros}
 
-% Custom font
-\usepackage{noto-mono}
-\usepackage{inter}
-\usepackage[default]{lato}
-\usepackage[T1]{fontenc}
+    \input{components/commands}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+    % document starts here
+    \begin{document}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+        \input{components/heading}
 
-\urlstyle{same}
+        \input{components/education}
 
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+        \input{components/skills}
 
-\definecolor{Black}{RGB}{0, 0, 0}
-\definecolor{Accent}{RGB}{63, 103, 151}
+        \input{components/experience}
 
-% Sections formatting
-\titleformat{\section}
-{\vspace{-4pt}\raggedright\footnotesize}{}{0em}{}
-[\color{Black}\titlerule\vspace{-5pt}]
+        \input{components/projects}
 
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
 
-\input{components/commands}
-
-\begin{document}
-
-\input{components/heading}
-
-\input{components/experience}
-
-\input{components/education}
-
-\input{components/projects}
-
-\input{components/skills}
-
-\end{document}
+    \end{document}
