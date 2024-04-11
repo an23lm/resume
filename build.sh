@@ -33,7 +33,7 @@ pdflatex -output-directory=$OUTPUT_DIR -8bit $TEX_FILE
 
 # Remove active elements from PDF using Ghostscript
 echo "===========Ghostscript Generate Clean PDF==========="
-gs -dBATCH -dDEBUG -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=$CLEAN_PDF $INTERMEDIATE_DIRTY_PDF
+gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=$CLEAN_PDF $INTERMEDIATE_DIRTY_PDF
 
 # Convert PDF to PNG using Ghostscript (using the clean PDF)
 echo "===========Ghostscript Generate PNG==========="
