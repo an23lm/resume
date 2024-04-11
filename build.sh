@@ -6,7 +6,23 @@ TEX_FILE="./resume.tex"
 INTERMEDIATE_DIRTY_PDF="$OUTPUT_DIR/resume.pdf"
 CLEAN_PDF="$OUTPUT_DIR/resume_clean.pdf"  # Temporary clean PDF
 PNG_OUTPUT="./resume.png"
-OUTPUT_FILE="Resume - Anselm Joseph - Full Stack Developer.pdf"
+
+# Get command line argument for output file name
+if [ "$1" != "" ]; then
+    OUTPUT_FILE="$1.pdf"
+fi
+# Get conformation to use default output file name
+if [ "$OUTPUT_FILE" == "" ]; then
+    echo "Use default output file name? (overwrite) [y/n]"
+    read USE_DEFAULT
+    if [ "$USE_DEFAULT" == "y" ]; then
+        OUTPUT_FILE="Resume - Anselm Joseph - Full Stack Developer.pdf"
+    else
+        echo "Enter output file name:"
+        read OUTPUT_FILE
+        OUTPUT_FILE="$OUTPUT_FILE.pdf"
+    fi
+fi
 
 # Create output directory if it doesn't exist
 mkdir -p $OUTPUT_DIR
