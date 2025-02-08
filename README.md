@@ -26,6 +26,13 @@ Install the following packages using `tlmgr` (sudo might be required):
 - `babel-greek`
 - `cbfonts`
 
+### Ghostscript
+Use ghostscript generate a "clean PDF" removing non-text characters and making it more ATS compatible.
+It is also to convert the PDF to PNG.
+```bash
+brew install ghostscript
+```
+
 ### Generating PDF
 ```bash
 chmod +x build.sh

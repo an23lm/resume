@@ -46,7 +46,8 @@
 		},
 		"latex-workshop.latex.outDir": "%DIR%/output",
 		"cSpell.words": [
-			"pdflatex"
+			"pdflatex",
+			"Vercel"
 		],
 	}
 }
