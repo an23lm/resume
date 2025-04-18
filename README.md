@@ -4,56 +4,7 @@
 ### Preview
 ![Resume](resume.png)
 
-### Simplified Setup (for MacOS)
-This is a simplified setup for MacOS. It uses [Homebrew](https://brew.sh/) to install the required packages. It is recommended to use this setup if you are using MacOS.
-1. Install [Homebrew](https://brew.sh/)
-2. Run the setup script to install the required packages:
-```bash
-./setup.sh
-```
-3. Run the build script to generate the PDF:
-```bash
-./build.sh
-```
 
-### Manual Setup (for MacOS)
-1. Install `macTeX` or `basicTeX`
-2. Install `pdflatex` if required
-
-#### Further setup For basicTeX
-Update the tlmgr using the following command:
-```bash
-sudo tlmgr update --self
-```
-Install the following packages using `tlmgr` (sudo might be required):
-- `latexindent`
-- `latexmk`
-- `preprint`
-- `collection-fontsextra`
-- `titlesec`
-- `marvosym`
-- `enumitem`
-- `noto`
-- `fontaxes`
-- `inter`
-- `greek-fontenc`
-- `babel-greek`
-- `cbfonts`
-
-### Ghostscript
-Use ghostscript generate a "clean PDF" removing non-text characters and making it more ATS compatible.
-It is also to convert the PDF to PNG.
-```bash
-brew install ghostscript
-```
-
-### Generating PDF
-```bash
-chmod +x build.sh
-./build.sh
-```
-
-### Plain Text
 Here's what the resume looks like for an ATS system:
 ```
 ANSELM JOSEPH
@@ -105,17 +56,67 @@ time by 20%.
   independent security agencies.
 ```
 
-### Feedback
+# Setup
+## Simplified Setup (for MacOS)
+This is a simplified setup for MacOS. It uses [Homebrew](https://brew.sh/) to install the required packages. It is recommended to use this setup if you are using MacOS.
+1. Install [Homebrew](https://brew.sh/)
+2. Run the setup script to install the required packages:
+```bash
+./setup.sh
+```
+1. Run the build script to generate the PDF:
+```bash
+./build.sh
+```
+
+## Manual Setup (for MacOS)
+1. Install `macTeX` or `basicTeX`
+2. Install `pdflatex` if required
+
+#### Further setup For basicTeX
+Update the tlmgr using the following command:
+```bash
+sudo tlmgr update --self
+```
+Install the following packages using `tlmgr` (sudo might be required):
+- `latexindent`
+- `latexmk`
+- `preprint`
+- `collection-fontsextra`
+- `titlesec`
+- `marvosym`
+- `enumitem`
+- `noto`
+- `fontaxes`
+- `inter`
+- `greek-fontenc`
+- `babel-greek`
+- `cbfonts`
+
+### Ghostscript
+Use ghostscript generate a "clean PDF" removing non-text characters and making it more ATS compatible.
+It is also to convert the PDF to PNG.
+```bash
+brew install ghostscript
+```
+
+### Generating PDF
+```bash
+chmod +x build.sh
+./build.sh
+```
+
+## Feedback
 I'm not an expert at LaTeX, this is my first work with LaTeX. Feedback is always welcome. If you have any to give, [create an issue on GitHub](https://github.com/an23lm/resume/issues).
 
-#### Known Issues
+## Known Issues
 - Some words in plain text use special characters which are not expected. Example: `Artiﬁcial Intelligence` should be `Artificial Intelligence` - [GitHub Issue #1](https://github.com/an23lm/resume/issues/1)
 
-### Inspiration
-Before this I used Pages to create my resume. I noticed that it was not ATS friendly. So I decided to create a LaTeX resume which is ATS friendly and looks professional.
+## Inspiration
+My journey began when I watched my sleek resume created using Apple Pages vanish in the ATS abyss. Determined to bridge design and discovery, I embraced LaTeX to craft a document that speaks fluently to both humans and machines. The result is a powerhouse template—professional, polished, and ATS-proof—designed to accelerate your next career breakthrough.
 
 This resume was inspired by [Jake's Resume](https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn) on Overleaf.
 https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn
 
-### License
+## License
 Unlicense
