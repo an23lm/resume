@@ -1,5 +1,9 @@
 # Anselm Joseph's Resume
 #### This is my resume created using LaTeX. It is ATS friendly and looks professional.
+
+### Preview
+![Resume](resume.png)
+
 ### Simplified Setup (for MacOS)
 This is a simplified setup for MacOS. It uses [Homebrew](https://brew.sh/) to install the required packages. It is recommended to use this setup if you are using MacOS.
 1. Install [Homebrew](https://brew.sh/)
@@ -48,9 +52,6 @@ brew install ghostscript
 chmod +x build.sh
 ./build.sh
 ```
-
-### Preview
-![Resume](resume.png)
 
 ### Plain Text
 Here's what the resume looks like for an ATS system:
