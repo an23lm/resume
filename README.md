@@ -1,6 +1,18 @@
 # Anselm Joseph's Resume
+#### This is my resume created using LaTeX. It is ATS friendly and looks professional.
+### Simplified Setup (for MacOS)
+This is a simplified setup for MacOS. It uses [Homebrew](https://brew.sh/) to install the required packages. It is recommended to use this setup if you are using MacOS.
+1. Install [Homebrew](https://brew.sh/)
+2. Run the setup script to install the required packages:
+```bash
+./setup.sh
+```
+3. Run the build script to generate the PDF:
+```bash
+./build.sh
+```
 
-### Setup (for Mac)
+### Manual Setup (for MacOS)
 1. Install `macTeX` or `basicTeX`
 2. Install `pdflatex` if required
 
@@ -13,9 +25,7 @@ Install the following packages using `tlmgr` (sudo might be required):
 - `latexindent`
 - `latexmk`
 - `preprint`
-- `fullpage`
 - `collection-fontsextra`
-- `fullpage`
 - `titlesec`
 - `marvosym`
 - `enumitem`
